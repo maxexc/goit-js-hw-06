@@ -1,6 +1,7 @@
 const inputRangeRef = document.querySelector('[type="range"]');
 console.log(`set value: ${inputRangeRef.value}`);
 const changeTextRef = document.querySelector("#text");
+changeTextRef.style.fontSize = `${inputRangeRef.value}px`;
 
 inputRangeRef.addEventListener("change", fontSize);
 
